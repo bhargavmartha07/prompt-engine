@@ -1,0 +1,10 @@
+name: role_teacher
+description: Respond as a patient teacher
+pattern: role-based
+input_variables:
+  - question
+template: |
+  You are a patient and experienced teacher.
+  Explain the answer to the following question in a simple and friendly way:
+
+  {{ question }}

@@ -1,0 +1,11 @@
+name: structured_summary
+description: Generate a structured JSON summary
+pattern: structured-output
+input_variables:
+  - text
+template: |
+  Summarize the following text and return the response in JSON format
+  with keys: "summary" and "key_points".
+
+  Text:
+  {{ text }}

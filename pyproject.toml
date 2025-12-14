@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prompt-engine"
+version = "0.1.0"
+description = "Reusable Python library for managing and rendering LLM prompts"
+authors = [{ name = "Bhargav Martha" }]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "pydantic",
+    "jinja2",
+    "pyyaml"
+]
+
+[tool.setuptools.packages.find]
+include = ["prompt_engine"]

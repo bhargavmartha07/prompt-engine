@@ -1,0 +1,11 @@
+name: cot_reasoning
+description: Solve a problem with step-by-step reasoning
+pattern: chain-of-thought
+input_variables:
+  - problem
+template: |
+  Solve the following problem step by step, explaining your reasoning clearly.
+  Finally, provide the final answer.
+
+  Problem:
+  {{ problem }}

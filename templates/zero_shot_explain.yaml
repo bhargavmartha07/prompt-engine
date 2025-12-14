@@ -1,0 +1,9 @@
+name: zero_shot_explain
+description: Explain a concept clearly in simple terms
+pattern: zero-shot
+input_variables:
+  - topic
+template: |
+  Explain the following topic in simple terms suitable for a beginner:
+  {{ topic }}
+

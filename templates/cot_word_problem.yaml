@@ -1,0 +1,10 @@
+name: cot_word_problem
+description: Solve a word problem with detailed reasoning
+pattern: chain-of-thought
+input_variables:
+  - question
+template: |
+  Think through the problem step by step before answering.
+
+  Question:
+  {{ question }}

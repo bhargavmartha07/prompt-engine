@@ -1,0 +1,11 @@
+name: structured_qa
+description: Answer a question in structured JSON format
+pattern: structured-output
+input_variables:
+  - question
+template: |
+  Answer the following question and return the response in JSON format
+  with keys: "answer" and "confidence".
+
+  Question:
+  {{ question }}

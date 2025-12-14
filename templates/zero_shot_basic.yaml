@@ -1,0 +1,8 @@
+name: zero_shot_basic
+description: Simple zero-shot prompt to summarize text
+pattern: zero-shot
+input_variables:
+  - text
+template: |
+  Summarize the following text in 3 sentences:
+  {{ text }}

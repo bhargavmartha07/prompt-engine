@@ -1,0 +1,20 @@
+name: few_shot_math
+description: Solve basic math problems using examples
+pattern: few-shot
+input_variables:
+  - question
+template: |
+  Solve the problem based on the examples below:
+
+  {% for ex in examples %}
+  Q: {{ ex.input }}
+  A: {{ ex.output }}
+  {% endfor %}
+
+  Q: {{ question }}
+  A:
+examples:
+  - input: "2 + 2"
+    output: "4"
+  - input: "3 + 5"
+    output: "8"
